@@ -16,7 +16,7 @@ section.features > .container {
     grid-template-columns: 1fr;
     gap: 2.5rem;
 }
-.feature-card {
+.feature-card{
     background-color: hsl(0, 0%, 100%);
     padding: 1.5rem 2rem;
     border-radius: 8px;
