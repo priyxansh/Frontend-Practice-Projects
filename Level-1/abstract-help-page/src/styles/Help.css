@@ -5,6 +5,42 @@ section.help-search {
     background-color: hsl(var(--secondary));
     padding: 5rem 1rem;
 }
-section.help-search .form-container{
+section.help-search .form-container {
     width: 100%;
+}
+section.features {
+    padding: 5rem 1rem;
+}
+section.features > .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+}
+.feature-card {
+    background-color: hsl(0, 0%, 100%);
+    padding: 1.5rem 2rem;
+    border-radius: 8px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    align-self: stretch;
+}
+.feature-heading {
+    font-size: 1.375rem;
+    font-weight: 700;
+}
+.feature-description {
+    font-size: 1.125rem;
+}
+.feature-learn-more {
+    font-size: 1.125rem;
+    color: hsl(var(--accent));
+}
+
+@media only screen and (min-width: 1080px) {
+    section.features > .container {
+        grid-template-columns: 1fr 1fr;
+    }
 }
