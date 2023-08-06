@@ -1,125 +1,124 @@
 header {
-  background-color: hsl(var(--black));
-  color: hsl(var(--white));
-  display: flex;
-  justify-content: center;
+    background-color: hsl(var(--black));
+    color: hsl(var(--white));
+    display: flex;
+    justify-content: center;
+    padding-inline: 1.5rem;
+    position: relative;
 }
 .navbar {
-  max-width: 1280px;
-  display: flex;
-  flex-grow: 1;
-  padding: 1rem 1rem;
-  position: relative;
-  font-family: "Nunito Sans";
-  z-index: 100;
+    max-width: var(--max-width);
+    display: flex;
+    flex-grow: 1;
+    padding-block: 1.5rem;
+    font-family: "Nunito Sans";
+    z-index: 100;
 }
 .nav-logo {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-  z-index: inherit;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    z-index: inherit;
 }
 .separator.vertical {
-  width: 1px;
-  background-color: hsl(var(--white));
-  height: 100%;
-  border-radius: 100vmax;
+    width: 1px;
+    background-color: hsl(var(--white));
+    height: 100%;
+    border-radius: 100vmax;
 }
 .logo-image-container {
-  display: flex;
-  align-items: center;
-  transition: filter 250ms ease;
+    display: flex;
+    align-items: center;
+    transition: filter 250ms ease;
 }
 .logo-image-container:hover {
-  filter: brightness(0.8);
+    filter: brightness(0.8);
 }
 .logo-image-container > img {
-  width: 100px;
+    width: 100px;
 }
 .nav-logo > .logo-text {
-  font-weight: 600;
-  font-size: 1.125rem;
-  transition: text-decoration-color 250ms ease;
-  text-decoration-style: solid;
-  text-decoration-color: transparent;
-  text-decoration-thickness: 1px;
-  text-decoration-line: underline;
+    font-weight: 600;
+    font-size: 1.125rem;
+    transition: text-decoration-color 250ms ease;
+    text-decoration-style: solid;
+    text-decoration-color: transparent;
+    text-decoration-thickness: 1px;
+    text-decoration-line: underline;
 }
 .nav-logo > .logo-text:hover {
-  text-decoration-color: hsl(var(--white));
+    text-decoration-color: hsl(var(--white));
 }
 .nav-toggler {
-  background-color: transparent;
-  border: none;
-  position: absolute;
-  right: 0;
-  top: 50%;
-  translate: 0 -50%;
-  cursor: pointer;
+    background-color: transparent;
+    border: none;
+   margin-left: auto;
+    cursor: pointer;
+    padding: 0;
 }
 .nav-toggler:focus-visible {
-  outline-color: transparent;
+    outline-color: transparent;
 }
 .nav-toggler svg {
-  stroke: hsl(var(--white));
-  width: 24px;
-  height: 24px;
+    stroke: hsl(var(--white));
+    width: 24px;
+    height: 24px;
 }
 .nav-list {
-  margin-left: auto;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  justify-content: center;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  right: 0;
-  padding: 2rem;
-  background-color: hsl(var(--black));
-  align-items: center;
-  opacity: 1;
-  pointer-events: none;
-  transition-property: scale top;
-  transition-duration: 250ms;
-  transition-timing-function: ease;
-  z-index: 99;
-  scale: 1 0;
-  transform-origin: top;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    padding: 2rem;
+    background-color: hsl(var(--black));
+    align-items: center;
+    opacity: 1;
+    pointer-events: none;
+    transition-property: scale top;
+    transition-duration: 250ms;
+    transition-timing-function: ease;
+    z-index: 99;
+    scale: 1 0;
+    transform-origin: top;
 }
-.nav-list.expanded{
+.nav-list.expanded {
     scale: 1;
     pointer-events: all;
 }
-.nav-item{
+.nav-item {
     width: 100%;
 }
-.nav-link{
+.nav-link {
     display: block;
     text-align: center;
     width: 100%;
     transition: filter 250ms ease;
 }
-.nav-link:hover{
+.nav-link:hover {
     filter: brightness(0.8);
 }
-.nav-list > .button-container{
+.nav-list > .button-container {
     display: none;
 }
-.navbar button{
+.navbar button {
     transition: filter 250ms ease;
 }
-.navbar button:hover{
+.navbar button:hover {
     filter: brightness(0.8);
 }
-@media only screen and (min-width:600px) {
-    .nav-item.mobile{
+@media only screen and (min-width: 600px) {
+    .nav-item.mobile {
         display: none;
     }
-    .nav-toggler{
+    .nav-toggler {
         display: none;
     }
-    .nav-list{
+    .nav-list {
         position: static;
         background-color: transparent;
         scale: 1;
@@ -127,7 +126,7 @@ header {
         pointer-events: all;
         flex-direction: row;
     }
-    .button-container{
+    .button-container {
         display: flex !important;
     }
 }
