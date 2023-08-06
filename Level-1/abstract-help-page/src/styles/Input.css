@@ -1,0 +1,38 @@
+input {
+    border: none;
+}
+input:focus-visible {
+    outline: 1px solid transparent;
+}
+.help-search .search-input {
+    font-size: 1.125rem;
+    font-family: "Nunito Sans", sans-serif;
+    padding: 0.875rem;
+    outline: 1px solid hsl(var(--black));
+    border-radius: 4px;
+    max-width: 700px;
+    width: 100%;
+    transition: outline 250ms ease;
+}
+.help-search .search-input:focus-visible,
+.help-search .search-input:active {
+    outline: 1px solid hsl(var(--accent));
+}
+.help-search .searchbar {
+    margin-block: 1rem;
+}
+.searchbar .input-block {
+    display: flex;
+    justify-content: center;
+}
+.searchbar label {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+@media only screen and (min-width: 500px) {
+    .help-search .search-input {
+        padding: 1.25rem;
+    }
+}

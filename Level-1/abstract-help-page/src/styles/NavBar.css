@@ -11,7 +11,7 @@ header {
     display: flex;
     flex-grow: 1;
     padding-block: 1.5rem;
-    font-family: "Nunito Sans";
+    font-family: "Nunito Sans", sans-serif;
     z-index: 100;
 }
 .nav-logo {
@@ -52,7 +52,7 @@ header {
 .nav-toggler {
     background-color: transparent;
     border: none;
-   margin-left: auto;
+    margin-left: auto;
     cursor: pointer;
     padding: 0;
 }

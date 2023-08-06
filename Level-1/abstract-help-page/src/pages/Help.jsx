@@ -1,9 +1,8 @@
-import React from 'react'
+import React from "react";
+import HelpSearch from "../components/HelpSearch";
 
 const Help = () => {
-  return (
-    <div>Help</div>
-  )
-}
+    return <HelpSearch />;
+};
 
-export default Help
+export default Help;

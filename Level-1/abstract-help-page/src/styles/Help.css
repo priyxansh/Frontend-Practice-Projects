@@ -1,0 +1,10 @@
+.help-heading {
+    text-align: center;
+}
+section.help-search {
+    background-color: hsl(var(--secondary));
+    padding: 5rem 1rem;
+}
+section.help-search .form-container{
+    width: 100%;
+}
